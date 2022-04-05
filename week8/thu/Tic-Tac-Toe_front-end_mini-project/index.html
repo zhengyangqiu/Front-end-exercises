@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script defer src="main.js"></script>
+    <!-- <script src="bundle.js"></script> -->
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <header>
+    </header>
+    <main>
+        <section class="centrePosition">
+            <p>Lets play tic tac toe</p>
+            <!-- this is the grid of the tic tac toe board-->
+            <button id="reset-button">New game</button>
+            <button id="reset-scores">Reset scores</button>
+        </section>
+        <section id="main-screen">
+            <section id="playerContainer">
+            <article id="player1">
+                <h2>Player 1</h2>
+                <h3 id="player1Score">Score: 0</h3>
+            </article>
+            </section>
+            <article id="grid-template">
+                <!-- each of the divs are a square in the grid board -->
+                <div id="top-left" class="icon-display">
+                    <!-- <i class="fa-thin fa-dolphin"></i>
+                    <i class="fa-thin fa-elephant"></i> -->
+                </div>
+                <div id="top-mid" class="icon-display">
+                    <!-- <i class="fa-thin fa-dolphin"></i>
+                    <i class="fa-thin fa-elephant"></i> -->
+                </div>
+                <div id="top-right" class="icon-display">
+                    <!-- <i class="fa-thin fa-dolphin"></i>
+                    <i class="fa-thin fa-elephant"></i> -->
+                </div>
+                <div id="mid-left" class="icon-display">
+                    <!-- <i class="fa-thin fa-dolphin"></i>
+                    <i class="fa-thin fa-elephant"></i> -->
+                </div>
+                <div id="mid-mid" class="icon-display">
+                    <!-- <i class="fa-thin fa-dolphin"></i>
+                    <i class="fa-thin fa-elephant"></i> -->
+                </div>
+                <div id="mid-right" class="icon-display">
+                    <!-- <i class="fa-thin fa-dolphin"></i>
+                    <i class="fa-thin fa-elephant"></i> -->
+                </div>
+                <div id="bottom-left" class="icon-display">
+                    <!-- <i class="fa-thin fa-dolphin"></i>
+                    <i class="fa-thin fa-elephant"></i> -->
+                </div>
+                <div id="bottom-mid" class="icon-display">
+                    <!-- <i class="fa-thin fa-dolphin"></i>
+                    <i class="fa-thin fa-elephant"></i> -->
+                </div>
+                <div id="bottom-right" class="icon-display">
+                    <!-- <i class="fa-thin fa-dolphin"></i> -->
+                    <!-- <i class="fa-thin fa-elephant"></i> -->
+                </div>
+            </article>
+            <article id="player2">
+                <h2>Player 2</h2>
+                <h3 id="player2Score">Score: 0</h3>
+                <label for="person">
+                    <input id="person" type="radio" name="playerOptions">Player
+                </label>
+                <label for="ai">
+                    <input id="ai" type="radio" name="playerOptions">AI
+                </label>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
